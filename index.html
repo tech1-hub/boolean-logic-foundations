@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="boolean expressions, truth tables, boolean logic, logical operators, digital logic, propositional logic">
+  <meta name="description" content="A detailed informational guide explaining Boolean expressions and their truth tables, covering operators, construction methods, examples, comparisons, and real-world applications.">
+  <title>Boolean Expressions and Their Truth Tables</title>
+  <style>
+    body {margin:0;font-family:Arial,Helvetica,sans-serif;background:#0a0614;color:#f5f3ff;line-height:1.7;}
+    header.hero {background:linear-gradient(135deg,#6d28d9,#0a0614);padding:80px 20px;text-align:center;}
+    header.hero h1 {font-size:3rem;color:#fff;margin-bottom:15px;}
+    header.hero p {max-width:900px;margin:auto;font-size:1.2rem;color:#e0e0e0;}
+    section {max-width:1200px;margin:auto;padding:50px 20px;}
+    h2,h3 {color:#a78bfa;}
+    p {margin-bottom:18px;}
+    ul {margin-left:20px;margin-bottom:25px;}
+    table {width:100%;border-collapse:collapse;margin:30px 0;background:#111;}
+    th,td {border:1px solid #333;padding:12px;text-align:center;}
+    th {background:#5b21b6;color:#fff;}
+    tr:nth-child(even){background:#1a1a1a;}
+    .highlight {background:#5b21b6;padding:15px;border-left:5px solid #a78bfa;margin:30px 0;}
+    a {color:#c4b5fd;text-decoration:none;}
+    footer {background:#0a0614;padding:30px 20px;text-align:center;color:#aaa;}
+  </style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>Boolean Expressions and Their Truth Tables</h1>
+  <p>Boolean expressions form the foundation of logical reasoning in mathematics, computer science, and digital electronics. Truth tables provide a systematic way to evaluate these expressions under all possible conditions.</p>
+</header>
+
+<section>
+  <h2>Introduction to Boolean Expressions</h2>
+  <p>A Boolean expression is a logical statement composed of Boolean variables and logical operators. Each variable can hold one of two possible values: true or false. Boolean expressions are designed to model decision-making processes, logical conditions, and computational logic.</p>
+  <p>These expressions are widely used in programming conditions, digital circuit design, search algorithms, and formal logic. Understanding how Boolean expressions behave is essential for analyzing logical systems accurately.</p>
+</section>
+
+<section>
+  <h2>What Is a Truth Table?</h2>
+  <p>A truth table is a structured representation that lists all possible input values of a Boolean expression and the corresponding output values. By explicitly enumerating every possible case, truth tables eliminate ambiguity and ensure logical completeness.</p>
+  <div class="highlight">
+    <p>Truth tables act as a bridge between abstract Boolean expressions and their concrete logical outcomes.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Basic Boolean Operators</h2>
+  <p>Boolean expressions are built using a small set of core operators. Each operator defines how input values combine to produce an output.</p>
+  <ul>
+    <li><strong>NOT (¬)</strong>: Inverts the truth value of a variable.</li>
+    <li><strong>AND (∧)</strong>: True only when all inputs are true.</li>
+    <li><strong>OR (∨)</strong>: True when at least one input is true.</li>
+    <li><strong>XOR (⊕)</strong>: True when inputs differ.</li>
+    <li><strong>Implication (→)</strong>: False only when a true input leads to a false result.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Truth Tables for Common Boolean Expressions</h2>
+  <h3>AND Expression</h3>
+  <table>
+    <tr><th>A</th><th>B</th><th>A ∧ B</th></tr>
+    <tr><td>True</td><td>True</td><td>True</td></tr>
+    <tr><td>True</td><td>False</td><td>False</td></tr>
+    <tr><td>False</td><td>True</td><td>False</td></tr>
+    <tr><td>False</td><td>False</td><td>False</td></tr>
+  </table>
+
+  <h3>OR Expression</h3>
+  <table>
+    <tr><th>A</th><th>B</th><th>A ∨ B</th></tr>
+    <tr><td>True</td><td>True</td><td>True</td></tr>
+    <tr><td>True</td><td>False</td><td>True</td></tr>
+    <tr><td>False</td><td>True</td><td>True</td></tr>
+    <tr><td>False</td><td>False</td><td>False</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>How to Build a Truth Table for a Boolean Expression</h2>
+  <p>Creating a truth table involves a systematic process that ensures accuracy:</p>
+  <ul>
+    <li>Identify all Boolean variables in the expression.</li>
+    <li>Calculate the number of rows using 2ⁿ, where n is the number of variables.</li>
+    <li>List every possible combination of truth values.</li>
+    <li>Evaluate intermediate operations step by step.</li>
+    <li>Determine the final output for each row.</li>
+  </ul>
+  <p>This method ensures that no logical scenario is missed during evaluation.</p>
+</section>
+
+<section>
+  <h2>Boolean Expressions in Logic Analysis</h2>
+  <p>Truth tables make it possible to analyze the behavior of complex Boolean expressions. They allow learners to identify patterns, verify equivalence, and detect contradictions or tautologies within logical systems.</p>
+  <p>For structured reference material and deeper explanations of logic-table construction, the guide available at <a href="https://tech1-hub.github.io/truth-table-logic-guide/">truth table logic guide</a> provides additional conceptual clarity.</p>
+</section>
+
+<section>
+  <h2>Boolean Algebra and Computational Tools</h2>
+  <p>Boolean algebra provides algebraic rules that govern how Boolean expressions can be manipulated and simplified. Truth tables serve as a verification mechanism for these transformations.</p>
+  <p>When analyzing larger expressions or checking logical consistency, using a <a href="https://truthcalulator.com/">boolean algebra calculator</a> can help validate results while reinforcing the underlying truth table concepts.</p>
+</section>
+
+<section>
+  <h2>Comparison: Boolean Expressions vs Propositional Statements</h2>
+  <table>
+    <tr>
+      <th>Aspect</th>
+      <th>Boolean Expressions</th>
+      <th>Propositional Statements</th>
+    </tr>
+    <tr>
+      <td>Primary Use</td>
+      <td>Computational and digital logic</td>
+      <td>Formal reasoning and logic</td>
+    </tr>
+    <tr>
+      <td>Evaluation Method</td>
+      <td>Truth tables and algebraic rules</td>
+      <td>Truth tables and logical proofs</td>
+    </tr>
+    <tr>
+      <td>Typical Application</td>
+      <td>Circuits, programming, algorithms</td>
+      <td>Mathematics and philosophy</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2>Applications of Boolean Expressions and Truth Tables</h2>
+  <ul>
+    <li>Design and analysis of digital circuits</li>
+    <li>Conditional logic in software development</li>
+    <li>Search and filtering algorithms</li>
+    <li>Artificial intelligence decision models</li>
+    <li>Formal verification of systems</li>
+  </ul>
+  <p>The versatility of Boolean expressions makes them essential across both theoretical and practical domains.</p>
+</section>
+
+<section>
+  <h2>Conclusion</h2>
+  <p>Boolean expressions and their truth tables provide a precise and reliable framework for logical evaluation. By systematically listing all possible outcomes, truth tables ensure clarity, accuracy, and completeness in reasoning.</p>
+  <p>Whether applied to mathematics, computing, or engineering, mastering Boolean expressions and truth tables equips learners with a foundational skill that underpins modern logical systems.</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Logic Education Resource.</p>
+</footer>
+
+</body>
+</html>
